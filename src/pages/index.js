@@ -14,7 +14,7 @@ import '../scss/index.scss'
 export default class Home extends React.PureComponent {
   render () {
     return (
-      <div className="homeContainer">
+      <div id="homeContainer">
         <Header />
         <Intro />
         <h2 id="aboutHeader" className="section">
