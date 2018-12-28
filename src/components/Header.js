@@ -1,9 +1,9 @@
 import React from 'react'
 import Scrollchor from 'react-scrollchor'
 
-class Navbar extends React.PureComponent {
+class Header extends React.PureComponent {
   componentDidMount () {
-    this.refs.navbar.addEventListener('click', e => {
+    this.refs.header.addEventListener('click', e => {
       if (e.target.innerText === 'About') {
         document.getElementById('about').scrollIntoView({ behavior: 'smooth' })
       } else if (e.target.innerText === 'Projects') {
@@ -16,8 +16,8 @@ class Navbar extends React.PureComponent {
 
   render () {
     return (
-      <div className ="navbar-container">
-        <nav className ="navbar" ref ="navbar">
+      <div className ="headeContainer">
+        <nav className ="header" ref ="header">
           <Scrollchor to="#about">About</Scrollchor>
           <Scrollchor to="#projects">Projects</Scrollchor>
           <Scrollchor to="#contact">Contact</Scrollchor>
@@ -27,4 +27,4 @@ class Navbar extends React.PureComponent {
   }
 }
 
-export default Navbar
+export default Header

@@ -6,13 +6,16 @@ import Scrollchor from 'react-scrollchor'
 class Intro extends React.PureComponent {
   render () {
     return (
-      <div className="intro-container">
+      <div className="introContainer">
         <div className="intro">
           <Typist>
-            Ryan Liu
+            <p>Hi, I&#39;m Ryan.</p>
+            <Typist.Delay ms={1000} />
+            <span id="greetings">Nice to meet you!</span>
           </Typist>
-          I am a student at the University of British Columbia.<br />Check out my {' '}
-          <Scrollchor to="#projects">side projects</Scrollchor> below.
+          <p>I am a student at the University of British Columbia.</p>
+          My {' '}
+          <Scrollchor to="#projects">side projects</Scrollchor> are listed below.
         </div>
       </div>
     )
