@@ -1,6 +1,8 @@
 @import '../mixins';
 
 .introContainer {
+  @include sides;
+
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
@@ -8,9 +10,31 @@
 
   @include sm {
     margin-top: 5vh;
+    padding: $custom-padding-sm;
   }
 
   .introFace {
     font-size: 5em;
+    color: $lightblue;
+
+    @include sm {
+      font-size: 2.5em;
+    }
+  }
+
+  .blurb {
+    font-weight: 200;
+    font-size: 1.3em;
+    color: slategray;
+    margin: 50px 0;
+
+    @include sm {
+      font-size: 1.0em;
+      margin: 25px 0;
+    }
+  }
+
+  .introFace:before {
+    content: '> ';
   }
 }

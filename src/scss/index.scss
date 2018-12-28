@@ -4,10 +4,10 @@
 
 @import 'components/Header';
 @import 'components/Intro';
-// @import 'components/About';
-// @import 'components/Projects';
-// @import 'components/Contact';
-// @import 'components/Footer';
+@import 'components/About';
+@import 'components/Projects';
+@import 'components/Contact';
+@import 'components/Footer';
 
 @font-face {
   font-family: 'Karla';
@@ -29,11 +29,6 @@ a {
   }
 }
 
-#homeContainer {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .section {
   color: $darkblue;
   text-align: center;
@@ -48,4 +43,11 @@ a {
   border: 3px solid $lightblue;
   width: 60px;
   content: ' ';
+}
+
+.bottom {
+  background-color: $lavender;
+  height: auto;
+  margin: 1em auto 1em;
+  padding: 1em;
 }

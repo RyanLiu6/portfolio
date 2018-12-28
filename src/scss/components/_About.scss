@@ -1,0 +1,9 @@
+@import '../mixins';
+
+.aboutContainer {
+    @include sides;
+
+    @include sm {
+      padding: $custom-padding-sm;
+    }
+}

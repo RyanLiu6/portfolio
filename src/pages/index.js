@@ -25,12 +25,13 @@ export default class Home extends React.PureComponent {
           Projects
         </h2>
         <Projects />
-        <div className="background" />
-        <h2 id="contact" className="section">
-          Hit me up!
-        </h2>
-        <Contact />
-        <Footer />
+        <div className="bottom">
+          <h2 id="contact" className="section">
+            Hit me up!
+          </h2>
+          <Contact />
+          <Footer />
+        </div>
       </div>
     )
   }

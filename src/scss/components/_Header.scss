@@ -1,6 +1,8 @@
 @import '../mixins';
 
 .headerContainer {
+  @include sides;
+
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
@@ -8,6 +10,7 @@
   @include sm {
     justify-content: center;
     width: 75%;
+    padding: $custom-padding-sm;
   }
 
   .header {

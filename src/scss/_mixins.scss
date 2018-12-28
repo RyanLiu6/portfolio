@@ -29,3 +29,10 @@
         @content;
     }
  }
+
+ // Custom spacing for sides
+ @mixin sides {
+   max-width: $custom-width;
+   margin: $custom-margin;
+   padding: $custom-padding;
+ }
