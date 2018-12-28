@@ -1,0 +1,16 @@
+@import '../mixins';
+
+.introContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 10vh;
+
+  @include sm {
+    margin-top: 5vh;
+  }
+
+  .introFace {
+    font-size: 5em;
+  }
+}

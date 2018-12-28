@@ -8,7 +8,8 @@ class Intro extends React.PureComponent {
     return (
       <div className="introContainer">
         <div className="intro">
-          <Typist>
+          <Typist className="introFace">
+            <Typist.Delay ms={500} />
             <p>Hi, I&#39;m Ryan.</p>
             <Typist.Delay ms={1000} />
             <span id="greetings">Nice to meet you!</span>

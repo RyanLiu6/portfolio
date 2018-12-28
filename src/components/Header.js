@@ -16,7 +16,7 @@ class Header extends React.PureComponent {
 
   render () {
     return (
-      <div className ="headeContainer">
+      <div className ="headerContainer">
         <nav className ="header" ref ="header">
           <Scrollchor to="#about">About</Scrollchor>
           <Scrollchor to="#projects">Projects</Scrollchor>
