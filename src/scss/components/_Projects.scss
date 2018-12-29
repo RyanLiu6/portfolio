@@ -1,9 +1,15 @@
 @import '../mixins';
 
 .projectsContainer {
-    @include sides;
+  @include sides;
 
-    @include sm {
-      padding: $custom-padding-sm;
-    }
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 5vh;
+
+  @include sm {
+    padding: $custom-padding-sm;
+    margin-top: 2.5vh;
+  }
 }

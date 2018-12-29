@@ -1,24 +1,33 @@
 import React from 'react'
 import Typist from 'react-typist'
+import Scrollchor from 'react-scrollchor'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import 'react-typist/dist/Typist.css'
 
-const LOAD = 'Loading Systems ...'
+const LOAD = 'Loading Critical Systems ...'
 
 class Intro extends React.PureComponent {
   render () {
     return (
       <div className="introContainer">
         <div id="intro">
-          <Typist className="introFace">
+          <Typist className="introFace" avgTypingSpeed={100}>
+            Loading Critical Systems .
             <Typist.Delay ms={500} />
-            Loading Systems
-            <Typist.Delay ms={1000} />
-             ...
+            .
+            <Typist.Delay ms={500} />
+            .
             <Typist.Backspace count={LOAD.length} delay={1000} />
-            hello ryanliu6
+            hello
+            <FontAwesomeIcon icon={['fa', 'hand-peace']} color='thistle' size='lg' />
           </Typist>
           <div className="blurb">
             My name is Ryan Liu, and I&#39;m currently a student at the University of British Columbia.
+            <br />
+            I&#39;m passionate about Software and Firmware development and would like to learn more
+            from internships and {' '}
+            <Scrollchor to="#projects">personal projects.</Scrollchor>
           </div>
         </div>
       </div>
