@@ -1,7 +1,7 @@
 @import '../mixins';
 
 .headerContainer {
-  @include sides;
+  @include customSides;
 
   display: flex;
   justify-content: flex-end;
@@ -22,27 +22,6 @@
 
     @include sm {
       font-size: 1em;
-    }
-
-    a {
-      position: relative;
-      text-decoration: none;
-
-      &:after {
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -30px;
-        width: 0;
-        height: 8px;
-        background-color: $lightblue;
-        content: '';
-        transition: width 0.15s;
-      }
-
-      &:hover:after {
-        width: 100%;
-      }
     }
   }
 }

@@ -1,11 +1,10 @@
 @import '../mixins';
 
 .introContainer {
-  @include sides;
+  @include customSides;
 
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
   margin-top: 20vh;
 
   @include sm {

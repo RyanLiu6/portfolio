@@ -1,15 +1,20 @@
 @import '../mixins';
 
 .projectsContainer {
-  @include sides;
+  @include customSides;
 
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
   margin-top: 5vh;
+  padding: 2vh;
 
   @include sm {
     padding: $custom-padding-sm;
     margin-top: 2.5vh;
+  }
+
+  & .singleProject {
+    @include customBorder;
+    @include customHover;
   }
 }

@@ -5,36 +5,50 @@ class About extends React.PureComponent {
   render () {
     return (
       <div className="aboutContainer">
+        {/*<div className="close">
+          <FontAwesomeIcon icon={['fa', 'times']} color='red' size='lg' />
+        </div>
+        */}
         <ul className="fa-ul">
           <li>
             <span className="fa-li" >
               <FontAwesomeIcon icon={['fa', 'location-arrow']} color='thistle' size='lg' />
             </span>
-            Vancouver, BC, Canada.
+            <span className="aboutItem">
+              Vancouver, BC, Canada.
+            </span>
           </li>
           <li>
             <span className="fa-li">
               <FontAwesomeIcon icon={['fa', 'university']} color='thistle' size='lg' />
             </span>
-            B.ASc Computer Engineering and Minor in Mathematics at the University of British Columbia
+            <span className="aboutItem">
+              B.ASc Computer Engineering and Minor in Mathematics at The University of British Columbia
+            </span>
           </li>
           <li>
             <span className="fa-li">
               <FontAwesomeIcon icon={['fa', 'tools']} color='thistle' size='lg' />
             </span>
-            ['C/C++', 'Java', 'Python', 'JavaScript', 'MongoDB', 'Git']
+            <span className="aboutItem">
+              C/C++, Java, Python, JavaScript, MongoDB, Git
+            </span>
           </li>
           <li>
             <span className="fa-li">
               <FontAwesomeIcon icon={['fa', 'heart']} color='thistle' size='lg' />
             </span>
-            ['Reading', 'Writing', 'Fitness', 'Cooking', 'Gunpla']
+            <span className="aboutItem">
+              Reading, Writing, Fitness, Cooking, Gunpla
+            </span>
           </li>
           <li>
             <span className="fa-li">
               <FontAwesomeIcon icon={['fa', 'file']} color='thistle' size='lg' />
             </span>
-            <a rel="noopener" href="/Ryan_Liu_Resume.pdf" target="_blank">My Resume</a>
+            <span className="aboutItem">
+              <a rel="noopener" href="/Ryan_Liu_Resume.pdf" target="_blank">My Resume</a>
+            </span>
           </li>
         </ul>
       </div>
@@ -43,36 +57,3 @@ class About extends React.PureComponent {
 }
 
 export default About
-
-/*
-<ul className="fa-ul">
-  <li>
-    <span className="fa-li">
-      <FontAwesomeIcon icon={['fa', 'location-arrow']} color='thistle' size='lg' />
-    </span>
-  </li>
-  <li>
-    <span className="fa-li">
-      <FontAwesomeIcon className="aboutDes" icon={['fa', 'university']} color='thistle' size='lg' />
-    </span>
-  </li>
-  <li>
-    <span className="fa-li">
-      <FontAwesomeIcon className="aboutDes" icon={['fa', 'tools']} color='thistle' size='lg' />
-    </span>
-    ['C/C++', 'Java', 'Python', 'JavaScript', 'MongoDB', 'Git']
-  </li>
-  <li>
-    <span className="fa-li">
-      <FontAwesomeIcon className="aboutDes" icon={['fa', 'heart']} color='thistle' size='lg' />
-    </span>
-    ['Reading', 'Writing', 'Fitness', 'Cooking', 'Gunpla']
-  </li>
-  <li>
-    <span className="fa-li">
-      <FontAwesomeIcon className="aboutDes" icon={['fa', 'file']} color='thistle' size='lg' />
-    </span>
-    <a rel="noopener" href="/Ryan_Liu_Resume.pdf" target="_blank">My Resume</a>
-  </li>
-</ul>
-*/

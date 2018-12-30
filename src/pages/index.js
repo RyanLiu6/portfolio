@@ -8,8 +8,9 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 import '../fontawesome'
-
 import '../scss/index.scss'
+
+import myProjects from '../props/myProjects'
 
 export default class Home extends React.PureComponent {
   render () {
@@ -24,7 +25,7 @@ export default class Home extends React.PureComponent {
         <h2 id="projects" className="section">
           Projects
         </h2>
-        <Projects />
+        <Projects projects={myProjects}/>
         <div className="bottom">
           <h2 id="contact" className="section">
             Hit me up!

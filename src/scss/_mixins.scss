@@ -31,8 +31,31 @@
  }
 
  // Custom spacing for sides
- @mixin sides {
+ @mixin customSides {
    max-width: $custom-width;
    margin: $custom-margin;
    padding: $custom-padding;
  }
+
+// Hover selection
+@mixin customHover {
+  -webkit-transform: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+  }
+}
+
+// Borders
+@mixin customBorder {
+  border-style: solid;
+  border-width: thin;
+  border-color: slategray;
+  border-radius: 25px;
+}

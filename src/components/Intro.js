@@ -12,22 +12,25 @@ class Intro extends React.PureComponent {
     return (
       <div className="introContainer">
         <div id="intro">
-          <Typist className="introFace" avgTypingSpeed={100}>
+          <Typist className="introFace" avgTypingSpeed={80}>
             Loading Critical Systems .
             <Typist.Delay ms={500} />
             .
             <Typist.Delay ms={500} />
             .
-            <Typist.Backspace count={LOAD.length} delay={1000} />
+            <Typist.Backspace count={LOAD.length} delay={500} />
             hello
-            <FontAwesomeIcon icon={['fa', 'hand-peace']} color='thistle' size='lg' />
           </Typist>
           <div className="blurb">
             My name is Ryan Liu, and I&#39;m currently a student at the University of British Columbia.
             <br />
+            <br />
             I&#39;m passionate about Software and Firmware development and would like to learn more
             from internships and {' '}
-            <Scrollchor to="#projects">personal projects.</Scrollchor>
+            <Scrollchor to="#projects">personal projects. </Scrollchor>
+            <br />
+            <br />
+            Insert spiel for books and gunpla.
           </div>
         </div>
       </div>
@@ -36,3 +39,5 @@ class Intro extends React.PureComponent {
 }
 
 export default Intro
+
+// <FontAwesomeIcon icon={['fa', 'hand-peace']} color='thistle' size='lg' />
