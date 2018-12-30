@@ -1,4 +1,5 @@
 # portfolio
 Personal Portfolio
 
-Icon from https://www.flaticon.com/authors/good-ware
+Icon is from https://www.flaticon.com/authors/good-ware
+Most images are from https://www.pexels.com

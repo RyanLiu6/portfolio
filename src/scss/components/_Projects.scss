@@ -1,20 +1,102 @@
-@import '../mixins';
+@import '../misc/mixins';
 
 .projectsContainer {
   @include customSides;
 
   display: flex;
   justify-content: flex-start;
-  margin-top: 5vh;
-  padding: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  padding: 0 5vh;
+  font-size: 1.3em;
 
   @include sm {
     padding: $custom-padding-sm;
-    margin-top: 2.5vh;
   }
 
   & .singleProject {
-    @include customBorder;
+    @include customLGBorder;
     @include customHover;
+
+    background-color: white;
+    margin: 5vh 0;
+    padding: 0 2vh;
+    transform: translateX(-2.5vh);
+    width: $custom-width;
+    min-height: 20vh;
+    overflow:hidden;
+
+    @include sm {
+      margin: 2.5vh 0;
+    }
+
+    & .projectText {
+      display: inline;
+      width: 65%;
+      float: left;
+
+      & .projectTitle {
+        font-size: 1.3em;
+        color: $darkblue;
+        margin: 2vh;
+
+        @include sm {
+          font-size: 1em;
+          margin: 1vh;
+        }
+      }
+
+      & .projectDes {
+        color: slategray;
+        margin: 2vh;
+
+        @include sm {
+          margin: 1vh;
+        }
+      }
+
+      & .skills {
+        display: flex;
+        justify-content: flex-start;
+
+        & .skillName {
+          @include customSMBorder;
+
+          margin: 0 0 2vh 2vh;
+          padding: 8px;
+          font-size: 0.8em;
+
+          @include sm {
+            margin: 0 0 1vh 1vh;
+          }
+        }
+      }
+
+      & .projectLink {
+        margin: 2vh;
+        margin-top: 0;
+
+        @include sm {
+          margin: 1vh;
+        }
+      }
+
+      & .projectLink {
+          &:hover:after {
+            width: 0%;
+          }
+      }
+    }
+
+    & .projectImg {
+      display: inline;
+      width: 30%;
+
+      & img {
+        width: inherit;
+        vertical-align: middle;
+        transform: translateY(2vh);
+      }
+    }
   }
 }

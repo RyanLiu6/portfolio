@@ -1,14 +1,13 @@
-@import '../mixins';
+@import '../misc/mixins';
 
 .aboutContainer {
   @include customSides;
-  @include customBorder;
+  @include customLGBorder;
   @include customHover;
 
   background-color: $lavender;
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
   margin-top: 5vh;
   padding: 2vh;
   font-size: 1.3em;

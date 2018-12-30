@@ -5,9 +5,9 @@ class Projects extends React.PureComponent {
   render () {
     return (
       <div className="projectsContainer">
-        <ul className="projectsUl">
+        <ul>
           {this.props.projects.map(curr => (
-            <li className="projectsLi" key={curr.title}>
+            <li key={curr.title}>
               <Project details={curr} />
             </li>
           ))}
@@ -19,23 +19,26 @@ class Projects extends React.PureComponent {
 
 class Project extends React.PureComponent {
   render () {
-    console.log(this.props.details)
-
     return (
       <div className="singleProject">
-        <div className="projectContent">
-          <h1>{this.props.details.title}</h1>
-          <p>{this.props.details.description}</p>
-          <ul className="skillsUl">
+        <div className="projectText">
+          <h1 className="projectTitle">
+            {this.props.details.title}
+          </h1>
+          <p className="projectDes">
+            {this.props.details.description}
+          </p>
+          <div className="skills">
             {this.props.details.skills.map((curr, i) => (
-              <li className="skillsLi" key={i}>
-                <Skill name={curr} key={i} />
-              </li>
+              <Skill name={curr} key={i} />
             ))}
-          </ul>
-          <a rel='noopener' target='_blank' href={this.props.details.github}>
-            <FontAwesomeIcon icon={['fab', 'github']} />
+          </div>
+          <a className="projectLink" rel="noopener" target="_blank" href={this.props.details.github}>
+            <FontAwesomeIcon icon={['fab', 'github']} /> View on Github
           </a>
+        </div>
+        <div className="projectImg">
+          <img src={this.props.details.image} />
         </div>
       </div>
     )
@@ -45,11 +48,13 @@ class Project extends React.PureComponent {
 class Skill extends React.PureComponent {
   render () {
     return (
-      <div className="singleSkill">
-        <p>{this.props.name}</p>
-      </div>
+      <p className="skillName">
+        {this.props.name}
+      </p>
     )
   }
 }
 
 export default Projects
+
+//

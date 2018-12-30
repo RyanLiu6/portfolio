@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Typist from 'react-typist'
 import Scrollchor from 'react-scrollchor'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import 'react-typist/dist/Typist.css'
 
@@ -30,7 +31,11 @@ class Intro extends React.PureComponent {
             <Scrollchor to="#projects">personal projects. </Scrollchor>
             <br />
             <br />
-            Insert spiel for books and gunpla.
+            On the side, I&#39;m an
+            <Link to="/writing/"> amateur author </Link>
+            and a
+            <Link to="/gunpla/"> Gunpla </Link>
+            enthusiast.
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SEO from '../components/seo'
+
 import Header from '../components/Header'
 import Intro from '../components/Intro'
 import About from '../components/About'
@@ -8,24 +10,26 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 import '../fontawesome'
-import '../scss/index.scss'
+import '../scss/pages/index.scss'
 
-import myProjects from '../props/myProjects'
+import propProjects from '../props/propProjects'
+import propAbout from '../props/propAbout'
 
 export default class Home extends React.PureComponent {
   render () {
     return (
       <div id="homeContainer">
+        <SEO title="Home" keywords={['gatsby', 'application', 'react', 'portfolio', 'ryanliu6']}/>
         <Header />
         <Intro />
         <h2 id="about" className="section">
           About Me
         </h2>
-        <About />
+        <About about={propAbout}/>
         <h2 id="projects" className="section">
           Projects
         </h2>
-        <Projects projects={myProjects}/>
+        <Projects projects={propProjects}/>
         <div className="bottom">
           <h2 id="contact" className="section">
             Hit me up!

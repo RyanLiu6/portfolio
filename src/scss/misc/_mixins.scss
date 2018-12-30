@@ -1,0 +1,68 @@
+/************************************************************************************
+ * Mixins from :
+ *https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+ ***********************************************************************************/
+ // Small devices
+ @mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ // Custom spacing for sides
+ @mixin customSides {
+   max-width: $custom-width;
+   margin: $custom-margin;
+   padding: $custom-padding;
+ }
+
+// Hover selection
+@mixin customHover {
+  -webkit-transform: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+  }
+}
+
+// Borders
+@mixin customLGBorder {
+  border-style: solid;
+  border-width: thin;
+  border-color: slategray;
+  border-radius: 25px;
+}
+
+@mixin customSMBorder {
+  border-style: solid;
+  border-width: thin;
+  border-color: #9fefe7;
+  border-radius: 5px;
+}
