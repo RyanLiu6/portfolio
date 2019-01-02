@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Typist from 'react-typist'
 import Scrollchor from 'react-scrollchor'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import 'react-typist/dist/Typist.css'
 
@@ -19,7 +18,7 @@ class Intro extends React.PureComponent {
             .
             <Typist.Delay ms={500} />
             .
-            <Typist.Backspace count={LOAD.length} delay={500} />
+            <Typist.Backspace count={LOAD.length} delay={1000} />
             hello
           </Typist>
           <div className="blurb">
@@ -44,5 +43,3 @@ class Intro extends React.PureComponent {
 }
 
 export default Intro
-
-// <FontAwesomeIcon icon={['fa', 'hand-peace']} color='thistle' size='lg' />

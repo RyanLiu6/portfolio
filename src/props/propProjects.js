@@ -4,48 +4,42 @@ import tvm from '../images/accounting.jpg'
 import cleaning from '../images/cleaning.jpg'
 import shopping from '../images/shopping.jpg'
 import java from '../images/java.jpg'
+import thonk from '../images/thonk.png'
 
 export default [
   {
-    image: portfolio,
+    image: thonk,
     title: 'Portfolio',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
-    skills: ['JavaScript', 'SASS', 'HTML', 'Gatsby.js', 'React.js', 'FontAwesome'],
+    description: 'Lightweight website built with GatsbyJS and ReactJS. Certain components (like this one) are dynamically generated based on external JSON data for easier modification.',
+    skills: ['JavaScript', 'SASS', 'HTML', 'GatsbyJS', 'ReactJS', 'FontAwesome'],
     github: 'https://github.com/RyanLiu6/portfolio'
   },
   {
-    image: apollo,
+    image: thonk,
     title: 'Apollo Bot',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
+    description: 'Discord and Slack bots made for UBC Local Hack Day 2018. Functionality includes Secret Santa and Restaurant suggestion and curation.',
     skills: ['JavaScript', 'Slack', 'Discord.js', 'Yelp Fusion'],
     github: 'https://github.com/RyanLiu6/ApolloBot'
   },
   {
-    image: tvm,
+    image: thonk,
     title: 'TVM Calculator',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
+    description: '',
     skills: ['JavaScript', 'REST APIs', 'Express.js', 'Postman'],
     github: 'https://github.com/RyanLiu6/tvm-calculator'
   },
   {
-    image: cleaning,
+    image: thonk,
     title: 'Cleanify',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
+    description: '',
     skills: ['JavaScript', 'Atom'],
     github: 'https://github.com/RyanLiu6/Cleanify'
   },
   {
-    image: shopping,
+    image: thonk,
     title: 'CheckedOut',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
+    description: '',
     skills: ['Python3', 'MongoDB', 'Multithreading', 'Custom Cache'],
     github: 'https://github.com/AYWG/CheckedOut'
-  },
-  {
-    image: java,
-    title: 'Java Design Studio',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper vulputate gravida cras amet.',
-    skills: ['Java', 'Tutorial', 'Github', 'Trello'],
-    github: 'https://github.com/RyanLiu6/java-design-studio'
   }
 ]

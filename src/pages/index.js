@@ -15,7 +15,7 @@ import '../scss/pages/index.scss'
 import propProjects from '../props/propProjects'
 import propAbout from '../props/propAbout'
 
-export default class Home extends React.PureComponent {
+class Home extends React.PureComponent {
   render () {
     return (
       <div id="homeContainer">
@@ -41,3 +41,5 @@ export default class Home extends React.PureComponent {
     )
   }
 }
+
+export default Home

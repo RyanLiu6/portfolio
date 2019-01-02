@@ -9,7 +9,7 @@ class Gunpla extends React.PureComponent {
       <div>
         <SEO title="Gunpla" />
         Currently nothing here, do come back another time
-        <FontAwesomeIcon icon={['fa', 'hand-peace']} color='thistle' size='lg' />
+        <FontAwesomeIcon icon={['far', 'hand-peace']} color='thistle' size='lg' />
       </div>
     )
   }

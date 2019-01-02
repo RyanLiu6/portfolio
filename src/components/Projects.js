@@ -56,5 +56,3 @@ class Skill extends React.PureComponent {
 }
 
 export default Projects
-
-//
