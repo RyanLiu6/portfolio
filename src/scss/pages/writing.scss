@@ -1,0 +1,16 @@
+@import '../misc/mixins';
+
+.writingContainer {
+  @include customSides;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20vh;
+  font-size: 2em;
+
+  @include sm {
+    margin-top: 15vh;
+    font-size: 1.5em;
+  }
+}

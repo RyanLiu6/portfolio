@@ -37,9 +37,13 @@ class Project extends React.PureComponent {
             <FontAwesomeIcon icon={['fab', 'github']} /> View on Github
           </a>
         </div>
-        <div className="projectImg">
-          <img src={this.props.details.image} />
-        </div>
+        {
+          /*
+          <div className="projectImg">
+            <img src={this.props.details.image} />
+          </div>
+          */
+        }
       </div>
     )
   }

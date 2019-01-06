@@ -1,4 +1,5 @@
 import React from 'react'
+import { StickyContainer, Sticky } from 'react-sticky'
 
 import SEO from '../components/seo'
 
@@ -20,23 +21,30 @@ class Home extends React.PureComponent {
     return (
       <div id="homeContainer">
         <SEO title="Home" keywords={['gatsby', 'application', 'react', 'portfolio', 'ryanliu6']}/>
-        <Header />
-        <Intro />
-        <h2 id="about" className="section">
-          About Me
-        </h2>
-        <About about={propAbout}/>
-        <h2 id="projects" className="section">
-          Projects
-        </h2>
-        <Projects projects={propProjects}/>
-        <div className="bottom">
-          <h2 id="contact" className="section">
-            Hit me up!
+        <StickyContainer>
+          <Sticky>
+            {({ style }) => (
+              <Header />
+            )}
+          </Sticky>
+
+          <Intro />
+          <h2 id="about" className="section">
+            About Me
           </h2>
-          <Contact />
-          <Footer />
-        </div>
+          <About about={propAbout}/>
+          <h2 id="projects" className="section">
+            Projects
+          </h2>
+          <Projects projects={propProjects}/>
+          <div className="bottom">
+            <h2 id="contact" className="section">
+              Hit me up!
+            </h2>
+            <Contact />
+            <Footer />
+          </div>
+        </StickyContainer>
       </div>
     )
   }

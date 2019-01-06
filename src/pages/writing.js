@@ -8,8 +8,10 @@ class Writing extends React.PureComponent {
     return (
       <div>
         <SEO title="Writing" />
-        Currently nothing here, do come back another time
-        <FontAwesomeIcon icon={['far', 'hand-peace']} color='thistle' size='lg' />
+        <div className="writingContainer">
+          Currently nothing here, do come back another time
+          <FontAwesomeIcon icon={['far', 'hand-peace']} color='thistle' size='lg' />
+        </div>
       </div>
     )
   }
